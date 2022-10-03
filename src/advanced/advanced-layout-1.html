@@ -6,13 +6,63 @@
     <title>Advanced Layout 1</title>
     <link rel="stylesheet" href="../style.css" />
     <style>
-      /* Doe hier jouw ding! */
+      /* body {
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: 1fr 1fr 2fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr .5fr;
+        grid-template-areas: 
+        ".. top right .."
+        ".. middle middle .."
+        ".. middle middle .."
+        ".. left left ..";
+      }
+      header {
+        grid-area: top;
+      }
+      nav {
+        grid-area: middle;
+      }
+      main {
+        grid-area: right;
+      }
+      footer {
+        grid-area: left;
+      } */
+
+      footer,nav,main,header {
+        width: 15em;
+        height: 5em;
+        margin: 10px;
+      }
+
+      nav {
+        align-self: flex-start;
+      }
+      
+      body {
+      display: grid;
+      place-content: center;
+      height: 100vh;
+    }
+
+      div{
+        width: 45vw;
+        /* background-color: red; */
+        display: flex;
+        margin: auto;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-end;
+      }
     </style>
   </head>
   <body id="advanced-layout-1">
+  <div>
     <header><h1>Advanced Layout 1</h1></header>
     <nav><a href="../index.html">Terug naar het overzicht</a></nav>
     <main></main>
     <footer></footer>
+  </div>
   </body>
 </html>
